@@ -1,0 +1,116 @@
+.landing {
+    min-height: calc(100vh - 8px);
+    background-color: #1f2021;
+    background-image: url("./imgs/EG-ar-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    position: relative;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 60%);
+}
+.landing::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: -8px;
+    left: 0;
+    background-color: rgb(132 132 132 / 60%);
+    z-index: 100;
+}
+.landing .text {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    width: 100%;
+}
+.landing .text h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing .text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.landing .text form .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing .text input {
+    background-color: transparent;
+    border: 1px solid #dc3545;
+    margin-right: 9px;
+    padding: 8px 12px;
+    color: #dc3545;
+    border-radius: 6px;
+}
+.landing .text input::placeholder {
+    color: white;
+}
+.landing .text input:focus {
+    outline: none;
+}
+.landing .text button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+@media(max-width:991px) {
+    .landing .text h2 {
+        font-size: 30px;
+    }
+    .landing .text p {
+        font-size: 1.3rem;
+    }
+    .landing .text button {
+        margin-top: 12px;
+    }
+    .name {
+        flex-direction: column !important;
+    }
+}
+@media(max-width:767px) {
+    .landing .text h2 {
+        font-size: 20px;
+    }
+    .landing .text p {
+        font-size: 1rem;
+    }
+    .landing .text button {
+        font-size: 15px;
+        width: 120px;
+    }
+    .landing .text input {
+        width: 240px;
+    }
+}
+@media(max-width:576px) {
+    .landing .text {
+        padding: 0 13px;
+    }
+    .header .navbar a {
+        font-size: 12px;
+    }
+    .header .navbar .logo {
+        font-size: 30px;
+    }
+}

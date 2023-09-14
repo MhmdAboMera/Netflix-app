@@ -1,0 +1,81 @@
+.slides {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: #dc3545;
+    position: relative;
+}
+.slides::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: -8px;
+    left: 0;
+    background-color: rgb(132 132 132 / 60%);
+    z-index: 100;
+}
+.carousel {
+    overflow: hidden;
+    cursor: grab;
+}
+.carousel .text-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.carousel .text-info h2 {
+    color: #dc3545;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 40px;
+}
+.carousel .text-info a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+.carousel .text-info a:hover {
+    color: #dc3545;
+    text-decoration: underline;
+}
+.inner-carousel {
+    display: flex;
+}
+.item {
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: grab;
+}
+.item:hover {
+    color: #dc3545 !important;
+}
+.item img {
+    border-radius: 1rem;
+    pointer-events: none;
+    width: 140px;
+    height: 200px;
+    display: block;
+    margin: auto;
+
+}
+.carousel .item a {
+    font-size: 15px;
+    display: block;
+    font-weight: 500;
+    padding: 10px 0 0;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.carousel .item a:hover {
+    text-decoration: underline;
+    color: #dc3545 !important;
+}
+
+@media(max-width:551px) {
+    .carousel .text-info h2 {
+        font-size: 14px;
+    }
+}

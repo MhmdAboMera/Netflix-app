@@ -1,0 +1,53 @@
+.header {
+    position: relative;
+    z-index: 2;
+}
+.header .navbar .logo {
+    color: #dc3545 !important;
+    font-weight: bold;
+    font-size: 40px;
+}
+.header .navbar a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: 0.3s !important;
+}
+/* .header .navbar a:focus,
+.header .navbar a:hover {
+    color: #dc3545 !important;
+    border-bottom: 1px solid #dc3545;
+}
+.active {
+    color: #dc3545 !important;
+    border-bottom: 1px solid #dc3545 !important;
+} */
+.header .navbar .logo:focus,
+.header .navbar .logo:hover {
+    border-bottom: none;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+a.btn.btn-sm.btn-danger.link-m:hover {
+    color: white !important;
+}
+.header .navbar .btn-icon .link-m {
+    border-style: none;
+}
+.header .navbar ul {
+    flex-direction: row !important;
+}
+.header .navbar .btn-icon svg {
+    color: white;
+}
+.header .navbar .btn-icon svg:hover,
+.header .navbar .btn-icon svg:focus {
+    color: #dc3545 !important;
+}
+@media(max-width:991px) {
+    .header .navbar .logo {
+        font-size: 30px;
+    }
+}

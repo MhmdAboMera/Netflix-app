@@ -1,0 +1,99 @@
+.form-login {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    min-height: 660px;
+    width: 450px;
+    background-color: #000000b8;
+    padding: 60px 68px 40px;
+    margin-top: 40px;
+}
+.form-login form h2 {
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 25px;
+}
+.form-login form input:not(input[type="submit"]) {
+    background-color: #847f7f;
+    border: none;
+    border-bottom: 3px solid #dc3545;
+    padding: 10px;
+    transition: 0.3s;
+}
+.form-login form input:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 3px solid #dc3545;
+    background-color: #847f7f;
+}
+.form-login form input[type="submit"] {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+}
+.form-login form .Remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-login form .Remember div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-login form .Remember div input {
+    border: none;
+    cursor: pointer;
+}
+.form-login form .Remember div label {
+    font-size: 13px;
+    cursor: pointer;
+}
+.form-login form .Remember button {
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+.form-login .text-login {
+    text-align: start;
+    margin: 50px 0;
+}
+.form-login .text-login p:first-child button {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+}
+.form-login .text-login p:last-child {
+    font-size: 13px;
+}
+.form-login .text-login p:last-child button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    margin-left: 5px;
+}
+.form-login form .Remember button:hover,
+.form-login .text-login p:last-child button:hover,
+.form-login .text-login p:first-child button:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:767px) {
+    .form-login {
+        width: 100%;
+        padding: 20px 30px 25px
+    }
+}
