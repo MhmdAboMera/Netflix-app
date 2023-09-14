@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Netflix-app/static/css/main.bcb3f482.css",
+    "main.js": "/Netflix-app/static/js/main.d09831b1.js",
+    "static/js/787.fa79b8c8.chunk.js": "/Netflix-app/static/js/787.fa79b8c8.chunk.js",
+    "static/media/EG-ar-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg": "/Netflix-app/static/media/EG-ar-20230821-popsignuptwoweeks-perspective_alpha_website_large.147ae768c7394bc10a16.jpg",
+    "static/media/video-tv-0819.mp4": "/Netflix-app/static/media/video-tv-0819.053994fc9a5da7a97b5b.mp4",
+    "static/media/video-devices.mp4": "/Netflix-app/static/media/video-devices.b27bb59e747d5b567095.mp4",
+    "index.html": "/Netflix-app/index.html",
+    "main.bcb3f482.css.map": "/Netflix-app/static/css/main.bcb3f482.css.map",
+    "main.d09831b1.js.map": "/Netflix-app/static/js/main.d09831b1.js.map",
+    "787.fa79b8c8.chunk.js.map": "/Netflix-app/static/js/787.fa79b8c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bcb3f482.css",
+    "static/js/main.d09831b1.js"
+  ]
+}
